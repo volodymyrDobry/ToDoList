@@ -1,14 +1,17 @@
-html{
+html {
     box-sizing: border-box;
 
 }
-*,*::before,*::after{
+
+*, *::before, *::after {
     box-sizing: inherit;
 }
-body{
+
+body {
     background-color: lightgray;
 }
-.wrapper{
+
+.wrapper {
     margin: 20px auto;
     width: 60vw;
     height: calc(100vh - 40px);
@@ -20,13 +23,76 @@ body{
     box-shadow: 5px 5px 15px gray;
     padding: 10px;
 }
-.wrapper > *{
-    flex: 1;
+
+.menu-container {
+    flex: 3;
+    background-color: lightgreen;
 }
+
+.main-content {
+    background-color: whitesmoke;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    height: 100%;
+    flex: 6;
+}
+
+.task-list{
+    margin-bottom:10px;
+    padding:0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content li {
+    width: 95%;
+    flex: 1;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.main-content h1 {
+    color: black;
+    margin-left: 50px;
+    font-family: Bahnschrift, cursive;
+}
+
+.main-content li:hover {
+    background-color: #edfbf3;
+}
+.add-task {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 2px 5px 2px 5px;
+    border: 2px solid #5ad1ad;
+    /*box-shadow: 5px 5px 5px gray;*/
+}
+
+.add-task a {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: Bahnschrift, cursive;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 10px 5px 10px;
+    /*background-color: gainsboro;*/
+    svg{
+        margin-right: 10px;
+    }
 .main-content{
     background-color: lightcoral;
 }
-.right-content{
+
+.right-content {
+    flex: 4;
     background-color: lightblue;
 }
 
@@ -117,4 +183,5 @@ body{
     color: white;
     font-size: small;
 }
+
 
