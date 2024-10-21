@@ -1,13 +1,16 @@
-html{
+html {
     box-sizing: border-box;
 }
-*,*::before,*::after{
+
+*, *::before, *::after {
     box-sizing: inherit;
 }
-body{
+
+body {
     background-color: lightgray;
 }
-.wrapper{
+
+.container {
     margin: 20px auto;
     width: 60vw;
     height: calc(100vh - 40px);
@@ -18,32 +21,79 @@ body{
     border-radius: 20px;
     box-shadow: 5px 5px 15px gray;
 }
-.wrapper > *{
+
+.container > * {
     flex: 1;
 }
-.navigation{
+
+.navbar {
     background-color: lightgreen;
 }
-.main-content{
+
+.content {
     background-color: lightcoral;
 }
-.right-content{
+
+.task-details {
     height: 100%;
     background: rgba(211, 211, 211, 0.3);
     padding-left: 20px;
 }
-.right-content span{
+
+.task-details span {
     color: gray;
 }
-.information{
+
+.task-info {
     padding-top: 30px;
 }
-.column-2{
-  position: absolute;
-    top:185px;
-    right:400px;
+
+.task-options {
+    position: absolute;
+    top: 185px;
+    right: 400px;
 }
-.column-2 span{
+
+.task-options span {
     color: black;
     padding-left: 20px;
+    border: black solid 1px;
+}
+
+.subtasks {
+    padding-top: 10px;
+}
+
+.add-tag {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    width: 70px;
+    justify-content: center;
+    background: lightblue;
+}
+
+.add-tag:hover {
+    border-radius: 10px;
+    background: cornflowerblue;
+}
+
+.btn-save {
+    width: 150px;
+    height: 50px;
+    border: black solid 1px;
+}
+
+.btn-cancel {
+    display: flex;
+    width: 130px;
+    height: 50px;
+    border: black solid 1px;
+    padding: 20px;
+}
+
+.task-buttons {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
 }

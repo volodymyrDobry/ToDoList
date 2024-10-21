@@ -4,35 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>To do list</title>
+    <title>To-do List</title>
 </head>
 <body>
-<div class="wrapper">
-    <nav class="navigation">
+<div class="container">
+    <nav class="navbar">
         Vova
     </nav>
-    <main class="main-content">
+    <main class="content">
         Sanya
     </main>
-    <aside class="right-content">
-        <div>
-<h2>Task</h2>
+    <aside class="task-details">
+        <div class="task-header">
+            <h2>Task</h2>
             <p><span> Renew driver`s license</span></p>
-        <p><span>Description </span></p>
+            <p><span>Description</span></p>
         </div>
-        <div class="information">
-           <p>List</p>
+        <div class="task-info">
+            <p>List</p>
             <p>Due date</p>
             <p>Tags</p>
-            <div class="column-2">
-<p> Personal</p>
-                <p>11-03-24</p>
-                <p>Tag 1<span>Add Tag</span></p>
-
+            <div class="task-options">
+                <p> Personal <input type="checkbox"></p>
+                <p><input type="date"></p>
+                <p class="add-tag">+ Add Tag</p>
             </div>
-            <div >
-
-            </div>
+        </div>
+        <div class="subtasks">
+            <h2>Subtasks:</h2>
+            <p><span>+ Add New Subtask</span></p>
+            <p><input type="checkbox"> Subtask</p>
+        </div>
+        <div class="task-buttons">
+            <button class="btn-save">Save</button>
+            <button class="btn-cancel">Cancel</button>
         </div>
     </aside>
 </div>
