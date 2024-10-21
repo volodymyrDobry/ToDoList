@@ -1,0 +1,32 @@
+html{
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+body{
+    background-color: lightgray;
+}
+.wrapper{
+    margin: 20px auto;
+    width: 60vw;
+    height: calc(100vh - 40px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px gray;
+}
+.wrapper > *{
+    flex: 1;
+}
+.navigation{
+    background-color: lightgreen;
+}
+.main-content{
+    background-color: lightcoral;
+}
+.right-content{
+    background-color: lightblue;
+}
