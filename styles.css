@@ -1,5 +1,6 @@
 html{
     box-sizing: border-box;
+
 }
 *,*::before,*::after{
     box-sizing: inherit;
@@ -17,12 +18,10 @@ body{
     background-color: whitesmoke;
     border-radius: 20px;
     box-shadow: 5px 5px 15px gray;
+    padding: 10px;
 }
 .wrapper > *{
     flex: 1;
-}
-.navigation{
-    background-color: lightgreen;
 }
 .main-content{
     background-color: lightcoral;
@@ -30,3 +29,92 @@ body{
 .right-content{
     background-color: lightblue;
 }
+
+.menu-container a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu-container{
+    background-color: #f0f0f0e7;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.toggle-btn{
+    align-self: center;
+}
+
+
+.toggle-btn > img{
+        height: 32px;
+        width: 32px;
+}
+
+.search{
+    background-image: url("icons/search_24dp_00000_FILL0_wght400_GRAD0_opsz24.png");
+    background-position: 0px 2px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 0px 5px 17px;
+    width: 100%;
+}
+
+
+.list-header{
+    font-weight: bold;
+    font-size: small;
+}
+
+.menu-container ul{
+    padding: 0;
+    list-style: none;
+}
+
+.menu-container img{
+    height: 32px;
+    width: 32px;
+    vertical-align: middle;
+}
+
+.menu-buttons{
+    margin-top: 30px;
+}
+
+.tags-list{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tags-list-item{
+    background-color: aqua;
+    border-radius: 5px;
+    padding: 0;
+}
+
+.tags-list-item:nth-child(2n){
+    background-color: red;
+}
+
+.tags-list-item:nth-child(3n){
+    background-color: green;
+}
+
+
+.tags-item{
+    padding: 10px 5px;
+    color: white;
+    font-size: small;
+}
+
