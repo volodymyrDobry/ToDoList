@@ -22,7 +22,7 @@ body {
     box-shadow: 5px 5px 15px gray;
 }
 
-.navigation {
+.menu-container {
     flex: 3;
     background-color: lightgreen;
 }
