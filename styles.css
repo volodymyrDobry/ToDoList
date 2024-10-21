@@ -1,6 +1,5 @@
 html {
     box-sizing: border-box;
-
 }
 
 *, *::before, *::after {
@@ -37,9 +36,9 @@ body {
     flex: 6;
 }
 
-.task-list{
-    margin-bottom:10px;
-    padding:0;
+.task-list {
+    margin-bottom: 10px;
+    padding: 0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -65,12 +64,12 @@ body {
 .main-content li:hover {
     background-color: #edfbf3;
 }
+
 .add-task {
     background-color: whitesmoke;
     border-radius: 10px;
-    padding: 2px 5px 2px 5px;
+    padding: 2px 5px;
     border: 2px solid #5ad1ad;
-    /*box-shadow: 5px 5px 5px gray;*/
 }
 
 .add-task a {
@@ -82,13 +81,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 5px 10px 5px 10px;
-    /*background-color: gainsboro;*/
-    svg{
-        margin-right: 10px;
-    }
-.main-content{
-    background-color: lightcoral;
+    padding: 5px 10px;
 }
 
 .right-content {
@@ -96,12 +89,12 @@ body {
     background-color: lightblue;
 }
 
-.menu-container a{
+.menu-container a {
     text-decoration: none;
     color: black;
 }
 
-.menu-container{
+.menu-container {
     background-color: #f0f0f0e7;
     display: flex;
     flex-direction: column;
@@ -111,22 +104,21 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
 }
 
-.toggle-btn{
+.toggle-btn {
     align-self: center;
 }
 
-
-.toggle-btn > img{
-        height: 32px;
-        width: 32px;
+.toggle-btn > img {
+    height: 32px;
+    width: 32px;
 }
 
-.search{
+.search {
     background-image: url("icons/search_24dp_00000_FILL0_wght400_GRAD0_opsz24.png");
     background-position: 0px 2px;
     background-size: 20px;
@@ -137,51 +129,111 @@ body {
     width: 100%;
 }
 
-
-.list-header{
+.list-header {
     font-weight: bold;
     font-size: small;
 }
 
-.menu-container ul{
+.menu-container ul {
     padding: 0;
     list-style: none;
 }
 
-.menu-container img{
+.menu-container img {
     height: 32px;
     width: 32px;
     vertical-align: middle;
 }
 
-.menu-buttons{
+.menu-buttons {
     margin-top: 30px;
 }
 
-.tags-list{
+.tags-list {
     display: flex;
     justify-content: space-around;
 }
 
-.tags-list-item{
+.tags-list-item {
     background-color: aqua;
     border-radius: 5px;
     padding: 0;
 }
 
-.tags-list-item:nth-child(2n){
+.tags-list-item:nth-child(2n) {
     background-color: red;
 }
 
-.tags-list-item:nth-child(3n){
+.tags-list-item:nth-child(3n) {
     background-color: green;
 }
 
-
-.tags-item{
+.tags-item {
     padding: 10px 5px;
     color: white;
     font-size: small;
 }
 
+.task-details {
+    height: 100%;
+    background: rgba(211, 211, 211, 0.3);
+    padding-left: 20px;
+}
 
+.task-details span {
+    color: gray;
+}
+
+.task-info {
+    padding-top: 30px;
+}
+
+.task-options {
+    position: absolute;
+    top: 185px;
+    right: 400px;
+}
+
+.task-options span {
+    color: black;
+    padding-left: 20px;
+    border: black solid 1px;
+}
+
+.subtasks {
+    padding-top: 10px;
+}
+
+.add-tag {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    width: 70px;
+    justify-content: center;
+    background: lightblue;
+}
+
+.add-tag:hover {
+    border-radius: 10px;
+    background: cornflowerblue;
+}
+
+.btn-save {
+    width: 150px;
+    height: 50px;
+    border: black solid 1px;
+}
+
+.btn-cancel {
+    display: flex;
+    width: 130px;
+    height: 50px;
+    border: black solid 1px;
+    padding: 20px;
+}
+
+.task-buttons {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
