@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background-color: lightgray;
+    background-image: linear-gradient(lightseagreen 0%,lightgreen 50%, lightcoral 100%);
 }
 
 .wrapper {
@@ -20,7 +20,7 @@ body {
     align-items: center;
     background-color: whitesmoke;
     border-radius: 20px;
-    box-shadow: 5px 5px 15px gray;
+    box-shadow: 5px 5px 20px black;
     padding: 10px;
 }
 
@@ -48,7 +48,7 @@ body {
 }
 
 
-.main-content li {
+    .main-content li {
     width: 95%;
     flex: 1;
     list-style: none;
